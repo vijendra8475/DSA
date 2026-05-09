@@ -96,7 +96,7 @@ int main() {
     // revArray(a, 10);
 
     // Exterem Print
-    ExtremePrint(a, 9);
+    // ExtremePrint(a, 9);
 
     // Array Output using loop
     // cout << "\nYour Array Elements : " ;
