@@ -6,9 +6,9 @@ int main() {
     // cout << "\nSize of array : " << sizeof(a);
 
     // valid initilization
-    int b[] = {2,3,4,5,6,7};
-    int c[3] = {1,2,3};
-    float d[5] = {2.3};
+    // int b[] = {2,3,4,5,6,7};
+    // int c[3] = {1,2,3};
+    // float d[5] = {2.3};
 
     // Invalid 
     // char name[2] = {'a','b','c'};
@@ -21,18 +21,33 @@ int main() {
         cin >> a[i];
 
     // Double the elements's value
-    for(int i=0; i<10; i++) 
-        a[i] *= 2;
+    // for(int i=0; i<10; i++) 
+    //     a[i] *= 2;
 
     // sum of all elements of array 
-    int sum = 0;
-    for(int i=0; i<10; i++)
-        sum += a[i];
+    // int sum = 0;
+    // for(int i=0; i<10; i++)
+    //     sum += a[i];
     
-    cout << "\nSum of all elememnts of array : " << sum;
+    // cout << "\nSum of all elememnts of array : " << sum;
+
+
+    // Enter Element which you want top search 
+    int n;
+    cout << "\nEnter Element which you want top search : ";
+    cin >> n;
+
+    // Linear Search
+    for(int i=0; i<10; i++) 
+        if(n == a[i]) {
+            cout << "\nEntered Element is in : " << i+1 << "th position ";
+            break;
+        }
+    
+    cout << "\nElement not found";
 
     // Array Output using loop
-    // cout << "\nYour Array Elements : " ;
-    // for(int i=0; i<10; i++) 
-    //     cout << a[i] << " ";
+    cout << "\nYour Array Elements : " ;
+    for(int i=0; i<10; i++) 
+        cout << a[i] << " ";
 }
