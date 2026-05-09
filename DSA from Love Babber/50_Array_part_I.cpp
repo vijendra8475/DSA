@@ -30,6 +30,19 @@ void revArray(int* a, int n) {
     
 }
 
+void ExtremePrint(int* a, int n) {
+    int st = 0, end = n-1;
+    while (st <= end)
+    {
+        if(st != end)
+            cout << a[st] << " ";
+        cout << a[end] << " ";
+        st++;
+        end--;
+    }
+    
+}
+
 int main() {
     int a[10];
     // cout << "\nBase address of array : " << a;
@@ -80,7 +93,10 @@ int main() {
     // count0sand1s(a,10);
 
     // Reverse an Array
-    revArray(a, 10);
+    // revArray(a, 10);
+
+    // Exterem Print
+    ExtremePrint(a, 9);
 
     // Array Output using loop
     // cout << "\nYour Array Elements : " ;
