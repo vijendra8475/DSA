@@ -1,4 +1,5 @@
 #include <iostream>
+#include<vector>
 #include<limits.h>
 using namespace std;
 void shiftNegativesToLast(int *a, int n)
@@ -48,6 +49,16 @@ void shiftNegativesToLast(int *a, int n)
     // }
 }
 
+void rotateArray(vector<int> &a,int n) {
+    int end = a.size();
+
+    while(n) {
+        swap(a[n], a[end]);
+        n--;
+        end--;
+    }
+    
+}
 
 void printArray(int *a, int n) {
     cout << "\nPrinting Array : ";
